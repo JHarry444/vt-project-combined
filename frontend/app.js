@@ -147,7 +147,7 @@ function handleLogin(e) {
         data: JSON.stringify({ username, password }),
         success: function (response) {
             // Store JWT token
-            authToken = response.token;
+            authToken = response.tkn;
             localStorage.setItem('authToken', authToken);
 
             currentUser = response.user;
